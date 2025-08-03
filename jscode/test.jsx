@@ -195,13 +195,102 @@
 
 // ✅ Arrow Function with Callback
 
-function fetchData(Callback){
-    console.log('Fetching data......');
-    setTimeout (() => {
-        const data = { id : 1, name: 'Mayur '};
-        console.log('Data is fetched successfully');
-        Callback(data);
-            })}
-fetchData((data) => { 
-    console.log('Data is ready to be processed:', data);
-});
+// function fetchData(Callback){
+//     console.log('Fetching data......');
+//     setTimeout (() => {
+//         const data = { id : 1, name: 'Mayur '};
+//         console.log('Data is fetched successfully');
+//         Callback(data);
+//             })}
+// fetchData((data) => { 
+//     console.log('Data is ready to be processed:', data);
+// });
+
+
+//Array Methods 
+// let fruits = ['Apple', 'banana', 'charry', 'date', 'elderberry'];
+
+// console.log('Original Array:', fruits);
+
+// Array push method
+
+// let num = [1,2,3,4,5];
+
+// num.push(6); // Adds 6 to the end of the array
+// console.log(num); 
+
+// Array pop method
+// let num = [1,2,3,4,5,6,7];
+
+// num.pop(); // Removes the last element (7) from the array
+// console.log(num);
+
+// Array shift method
+// let num = [1,2,3,4,5,6,7];
+// num.shift(); // Removes the first element (1) from the array
+// console.log(num); 
+
+// Array unshift method
+// let num = [1,2,3,4,5,6,7];
+// num.unshift(4); // Adds 0 to the beginning of the array
+// console.log(num); 
+
+
+// Array splice method
+// let num = [1,2,3,4,5,6,7];
+// num.splice(2, 1, 10); // Removes 1 element at index
+// // 2 and adds 10 at that position
+// console.log(num); 
+
+// Array slice method
+// let num = [1,2,3,4,5,6,7];
+// let sliceArray = num.slice(2, 5); // Extracts elements from index
+// // 2 to index 5 (not including 5)
+// console.log(sliceArray); 
+
+
+//loop Methods
+
+// for loop
+// for (let i = 0; i<5; i++){
+//     console.log(i);
+// }
+
+//While Loop
+// let i = 0;
+// while(i<5){
+//     console.log(i);
+//     i++;
+// }
+
+
+//  For...of Loop
+// let fruits = ["apple", "banana", "charray"];
+// for (let fruit of fruits){
+//     console.log(fruit);
+// }
+
+
+// map
+// let nums = [1,2,3];
+// let Squared = nums.map(num => num*num);
+// console.log(Squared);
+
+
+// let nums = [1,2,3,4,5];
+// let Squared = nums.map(num => num * 5)
+// console.log(Squared);
+
+// let Fruits = ["apple","banana","carray"];
+// let UppaerCase =  Fruits.map(Fruits => Fruits.toUpperCase());
+// console.log(UppaerCase);
+
+
+//filter
+// let nums = [1,2,3,4,5,6,7,8];
+// let evens = nums.filter(nums => nums % 2 == 0)
+// console.log(evens)
+
+let nums = [12, 13, 44, 66 ,74, 77]
+let odd = nums.filter(nums => nums % 2 == 1)
+console.log(odd)
