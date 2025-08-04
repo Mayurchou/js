@@ -291,6 +291,43 @@
 // let evens = nums.filter(nums => nums % 2 == 0)
 // console.log(evens)
 
-let nums = [12, 13, 44, 66 ,74, 77]
-let odd = nums.filter(nums => nums % 2 == 1)
-console.log(odd)
+// let nums = [12, 13, 44, 66 ,74, 77]
+// let odd = nums.filter(nums => nums % 2 == 1)
+// console.log(odd)
+
+// Object
+
+// const person = {
+//     name: 'Mayur',
+//     age: 25,
+//     isStudent: false
+// };
+
+// console.log(person.name);
+// console.log(person["age"]);
+// console.log(person.isStudent)
+
+// person.name = "Ashvin";
+// person["age"] = 26;
+
+// console.log(person.name);
+// console.log(person["age"]);
+
+
+// const student = {
+//     name : "Emma",
+//     grade : {
+//         math : 89,
+//         science : 100,
+//         bio : 60
+//     }
+// };
+// console.log(student.grade.math)
+// console.log(student.grade.science)
+// console.log(student.grade.bio)
+// console.log(student.name)
+
+// student.grade.bio = 30
+// console.log(student.grade.bio)
+
+
