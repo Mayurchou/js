@@ -331,3 +331,38 @@
 // console.log(student.grade.bio)
 
 
+// const person = {
+//     name : "Mayur",
+//     age  : 26,
+//     isStudent : false,
+//     hobbies : ["Reading","coding"],
+//     addresss :{
+//         city : "Burhanpur",
+//         pincode : 445
+//     }
+// }
+
+// console.log(person.addresss.city)
+
+
+
+
+
+// function OuterFunction(){
+//     let count = 1;
+
+//     function InnerFunction(){
+//         count++;
+//         console.log('count:', count)
+
+//     }
+//     return InnerFunction;
+
+// }
+// const counter = OuterFunction();
+// counter();
+// counter();
+// counter();
+// counter();
+
+
