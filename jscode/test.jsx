@@ -366,3 +366,52 @@
 // counter();
 
 
+// ✅ Promise Syntax:
+
+// const promise = new Promise((resolve, reject) =>{
+//     if(success){
+//         resolve("Operation was successful");
+
+//     }else{
+//         reject("operation failed");
+//     }
+    
+// })
+
+
+// promise
+// .then(result => {
+//     console.log("success:", result);
+
+// })
+
+// .catch(error => {
+//     console.log("error:", error);
+// })
+
+
+// const promise = new Promise((resolve, reject) => {
+
+//     success = true; 
+//     // async operation
+//     let result = "Operaton was successful";
+//     let error = "Operation failed";
+//     if (success) {
+//         resolve(result); // fulfilled
+//     } else {
+//         reject(error);   // rejected
+//     }
+// });
+
+
+
+// promise
+//   .then(result => console.log("Success:", result))
+//   .catch(error => console.error("Error:", error));
+
+
+
+
+// ✅ What is async/await?
+
+
