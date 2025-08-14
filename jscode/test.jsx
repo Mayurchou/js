@@ -412,6 +412,63 @@
 
 
 
-// ✅ What is async/await?
+// let promise = new Promise((resolve, reject)=>{
+//     setTimeout(() => resolve("Data fetched successfully"), 2000)
+// });
+
+// promise
+//     .then((result) =>{
+//         console.log(result())
+//     })
+//     .catch((error) => {
+//         console.log("Error:", error)
+//     })
 
 
+
+
+// Async/Awit Syntax;
+
+// async function fetchData(){
+//     try{
+//         let response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//         if(!response.ok){
+//             throw new Error("Network response was not ok");
+
+//         }else{
+//             let data = await response.json();
+//             console.log("Data fetched successfully:", data);
+//         }
+//     } catch (error) {
+//         console.error("Error fetching data:", error);
+//     }
+// }
+
+// fetchData();
+
+
+let promise = new Promise((resolve, reject) => {
+    setTimeout(() => resolve("Fake Data from server"), 2000);
+});
+promise.then((result) =>{
+    console.log("fake data:", result)
+})
+.catch((error) => {
+    console.error("Error fetching data", error);
+});
+
+
+async function DataFetch(){
+    try{
+        let response = await fetch("https://jsonplaceholder.typicode.com/posts");
+        if(!response.ok){
+            throw new Error("Network response was not ok");
+        } else {
+            let data = await response.json();
+            console.log("data fetched successfully:", data);
+        }
+    } catch (error) {
+        console.error("Error fetched data: ", error);
+    }
+}
+DataFetch();
